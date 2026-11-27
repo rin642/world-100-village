@@ -15,6 +15,12 @@
     "dataYear": "2026年（中位推計・2026年7月1日時点）",
     "sourceOrganization": "国連経済社会局 人口部（UN DESA, Population Division）— World Population Prospects 2024 Revision",
     "sourceUrl": "https://population.un.org/wpp/",
+    "secondarySourceUrls": [
+      {
+        "label": "国連人口部 Data Portal",
+        "url": "https://population.un.org/dataportal/home"
+      }
+    ],
     "definitionAndDenominator": "国連「世界人口推計2024年版」の中位推計による2026年の地域別人口割合。分母は2026年世界総人口推計値（8,300,678,395人）。",
     "status": "available",
     "exactPercentageSum": 100.0,
@@ -87,6 +93,12 @@
     "pppBasis": "2021年購買力平価（2021 PPP）基準・1日3.00国際ドル未満",
     "sourceOrganization": "世界銀行（World Bank）— Poverty and Inequality Platform (PIP)",
     "sourceUrl": "https://pip.worldbank.org/",
+    "secondarySourceUrls": [
+      {
+        "label": "世界銀行 WDI (SI.POV.DDAY)",
+        "url": "https://data.worldbank.org/indicator/SI.POV.DDAY/countries"
+      }
+    ],
     "definitionAndDenominator": "2021年購買力平価（PPP）換算で1日3.00ドル未満の消費または所得で生活する人口の割合（2025年6月改定の国際極度貧困ライン）。分母は世界総人口。",
     "status": "available",
     "exactPercentageSum": 100.0,
@@ -125,6 +137,12 @@
     "dataYear": "2024年",
     "sourceOrganization": "WHO / UNICEF Joint Monitoring Programme (JMP)",
     "sourceUrl": "https://washdata.org/",
+    "secondarySourceUrls": [
+      {
+        "label": "WHO Global Health Observatory",
+        "url": "https://who.int/data/gho/data/indicators"
+      }
+    ],
     "definitionAndDenominator": "敷地内に設置され、必要な時に利用可能で、糞便性および優先化学物質による汚染のない改良型飲料水源（Safely managed drinking water services）を利用できる人の割合。分母は世界総人口。",
     "status": "available",
     "exactPercentageSum": 100.0,
@@ -157,6 +175,12 @@
     "dataYear": "2024年（実績推計）",
     "sourceOrganization": "国連経済社会局 人口部（UN DESA, Population Division）— World Population Prospects 2024 Revision",
     "sourceUrl": "https://population.un.org/wpp/",
+    "secondarySourceUrls": [
+      {
+        "label": "国連人口部 Data Portal",
+        "url": "https://population.un.org/dataportal/home"
+      }
+    ],
     "definitionAndDenominator": "出生時平均余命（その年の年齢別死亡率が今後も続くと仮定した場合の0歳児の平均生存年数）。分母は世界の出生コホート全体に対する平均値。※平均値であるため、100人あたりの人数には変換しません。",
     "status": "available",
     "value": 73.3,
@@ -308,6 +332,12 @@
     "dataYear": "未取得",
     "sourceOrganization": "未取得（利用許諾のない有料データは転載しない方針）",
     "sourceUrl": null,
+    "secondarySourceUrls": [
+      {
+        "label": "Ethnologue（参考確認先・詳細L1データは有料のため非転載）",
+        "url": "https://www.ethnologue.com/insights/most-spoken-language/"
+      }
+    ],
     "definitionAndDenominator": "母語話者（第一言語：L1）数のみを基準とした世界人口に対する言語別割合。第2言語（L2）話者は重複計上しない。分母は世界総人口。",
     "status": "unavailable",
     "reason": "最新の網羅的かつ公的・無償で利用許諾のある母語話者数（L1）統計が確認できないため「未取得」と表示しています。主要なグローバル言語統計データベース（Ethnologue等）は有料または利用許諾を要するため転載せず、推測による補完やL2（第2言語）話者の合算も行いません。"

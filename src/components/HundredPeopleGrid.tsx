@@ -100,7 +100,9 @@ export function HundredPeopleGrid({
               />
               <span className="font-medium">{item.label}</span>
               <span className={isSelected ? 'text-white/90' : 'text-[#526071]'}>
-                {item.per100Grid}人（{item.percentage}%）
+                {item.per100Grid === item.per100Rounded
+                  ? `${item.per100Grid}人（${item.percentage}%）`
+                  : `アイコン${item.per100Grid}人／四捨五入 約${item.per100Rounded}人（${item.percentage}%）`}
               </span>
             </button>
           );

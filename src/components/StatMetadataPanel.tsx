@@ -64,6 +64,24 @@ export function StatMetadataPanel({
             ) : (
               <span className="text-[#526071]">該当なし（未取得）</span>
             )}
+            {meta.secondarySourceUrls && meta.secondarySourceUrls.length > 0 && (
+              <div className="mt-1.5 space-y-1">
+                {meta.secondarySourceUrls.map((sec) => (
+                  <div key={sec.url} className="text-xs text-[#526071]">
+                    <span>{sec.label}：</span>
+                    <a
+                      href={sec.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-medium text-[#2b6cb0] underline decoration-[#2b6cb0]/40 underline-offset-2 hover:text-[#1e3a5f]"
+                    >
+                      <span>{sec.url}</span>
+                      <ExternalLink className="h-3 w-3 shrink-0" aria-hidden="true" />
+                    </a>
+                  </div>
+                ))}
+              </div>
+            )}
           </dd>
         </div>
         <div className="sm:col-span-2">

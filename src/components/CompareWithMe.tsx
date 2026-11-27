@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   CheckCircle2,
   EyeOff,
@@ -39,6 +39,14 @@ export function CompareWithMe({ data }: CompareWithMeProps) {
   // React state only: never persisted to LocalStorage/SessionStorage and never sent to any server
   const [form, setForm] = useState<UserProfileInput>(INITIAL_INPUT);
   const [showResult, setShowResult] = useState(false);
+  const [scrollTrigger, setScrollTrigger] = useState(0);
+  const resultRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (showResult && scrollTrigger > 0) {
+      resultRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [showResult, scrollTrigger]);
 
   const handleReset = () => {
     setForm(INITIAL_INPUT);
@@ -253,6 +261,7 @@ export function CompareWithMe({ data }: CompareWithMeProps) {
         onSubmit={(e) => {
           e.preventDefault();
           setShowResult(true);
+          setScrollTrigger((c) => c + 1);
         }}
         className="space-y-5"
       >
@@ -329,6 +338,9 @@ export function CompareWithMe({ data }: CompareWithMeProps) {
               <option value="above_or_equal_3">1日3.00ドル以上</option>
               <option value="below_3">1日3.00ドル未満</option>
             </select>
+            <p className="mt-1.5 text-[11px] leading-relaxed text-[#526071]">
+              ※各国の物価差を調整した「国際ドル」基準です。日本で通常の生活ができている場合は「1日3.00ドル以上」に該当します。
+            </p>
           </div>
 
           {/* 飲み水の状況 */}
@@ -465,7 +477,10 @@ export function CompareWithMe({ data }: CompareWithMeProps) {
 
       {/* Comparison & Final Screen */}
       {showResult && (
-        <div className="mt-8 space-y-6 border-t-2 border-[#e5dfd0] pt-8">
+        <div
+          ref={resultRef}
+          className="mt-8 scroll-mt-20 space-y-6 border-t-2 border-[#e5dfd0] pt-8"
+        >
           <div>
             <h3 className="text-lg font-bold text-[#1e3a5f] sm:text-xl">
               世界100人の村の統計と、あなたの比較結果

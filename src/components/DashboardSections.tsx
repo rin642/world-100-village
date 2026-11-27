@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import {
   AlertTriangle,
   BookOpen,
@@ -30,6 +31,20 @@ interface DashboardSectionsProps {
   data: WorldStatisticsData;
 }
 
+function useIsSmallScreen(): boolean {
+  const [isSmall, setIsSmall] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 639px)');
+    const update = () => setIsSmall(media.matches);
+    update();
+    media.addEventListener('change', update);
+    return () => media.removeEventListener('change', update);
+  }, []);
+
+  return isSmall;
+}
+
 function formatTooltipPercent(value: unknown): string {
   if (typeof value === 'number') {
     return `${value}%`;
@@ -38,6 +53,7 @@ function formatTooltipPercent(value: unknown): string {
 }
 
 export function DashboardSections({ data }: DashboardSectionsProps) {
+  const isSmallScreen = useIsSmallScreen();
   const {
     population,
     income,
@@ -90,8 +106,8 @@ export function DashboardSections({ data }: DashboardSectionsProps) {
                     <YAxis
                       type="category"
                       dataKey="label"
-                      width={108}
-                      tick={{ fontSize: 12, fill: '#1e293b' }}
+                      width={isSmallScreen ? 88 : 112}
+                      tick={{ fontSize: isSmallScreen ? 10 : 12, fill: '#1e293b' }}
                     />
                     <Tooltip
                       formatter={(val) => [formatTooltipPercent(val), '世界人口比']}
@@ -179,7 +195,7 @@ export function DashboardSections({ data }: DashboardSectionsProps) {
       >
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <div className="flex flex-col justify-between gap-4">
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {income.items.map((item) => (
                 <div
                   key={item.id}
@@ -385,7 +401,7 @@ export function DashboardSections({ data }: DashboardSectionsProps) {
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <div className="flex flex-col justify-between gap-4">
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {education.items.map((item) => (
                 <div
                   key={item.id}
@@ -463,7 +479,7 @@ export function DashboardSections({ data }: DashboardSectionsProps) {
       >
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <div className="flex flex-col justify-between gap-4">
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {information.items.map((item) => (
                 <div
                   key={item.id}
@@ -507,8 +523,15 @@ export function DashboardSections({ data }: DashboardSectionsProps) {
                     <YAxis
                       type="category"
                       dataKey="label"
-                      width={132}
-                      tick={{ fontSize: 11, fill: '#1e293b' }}
+                      width={isSmallScreen ? 84 : 132}
+                      tick={{ fontSize: isSmallScreen ? 10 : 11, fill: '#1e293b' }}
+                      tickFormatter={(v: string) =>
+                        isSmallScreen
+                          ? v.includes('未利用')
+                            ? '未利用者'
+                            : '利用者'
+                          : v
+                      }
                     />
                     <Tooltip
                       formatter={(val) => [formatTooltipPercent(val), '世界人口比']}
@@ -584,7 +607,7 @@ export function DashboardSections({ data }: DashboardSectionsProps) {
                 </PieChart>
               </ResponsiveContainer>
             </div>
-            <div className="mt-2 grid grid-cols-2 gap-2 text-xs">
+            <div className="mt-2 grid grid-cols-1 gap-2 text-xs sm:grid-cols-2">
               {religion.items.map((item) => (
                 <div
                   key={item.id}
@@ -628,8 +651,8 @@ export function DashboardSections({ data }: DashboardSectionsProps) {
                     <YAxis
                       type="category"
                       dataKey="label"
-                      width={96}
-                      tick={{ fontSize: 12, fill: '#1e293b' }}
+                      width={isSmallScreen ? 82 : 96}
+                      tick={{ fontSize: isSmallScreen ? 11 : 12, fill: '#1e293b' }}
                     />
                     <Tooltip
                       formatter={(val) => [formatTooltipPercent(val), '割合（2020年）']}

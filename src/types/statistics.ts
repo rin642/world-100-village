@@ -11,12 +11,18 @@ export interface StatCategoryItem {
   note?: string;
 }
 
+export interface SecondarySourceLink {
+  label: string;
+  url: string;
+}
+
 export interface IndicatorMetadata {
   indicatorName: string;
   per100Summary: string;
   dataYear: string;
   sourceOrganization: string;
   sourceUrl: string | null;
+  secondarySourceUrls?: SecondarySourceLink[];
   definitionAndDenominator: string;
   status: IndicatorStatus;
   roundingNote?: string;

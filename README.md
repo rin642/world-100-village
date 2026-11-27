@@ -2,6 +2,9 @@
 
 2026年11月27日時点で利用できる最新の公的統計データをもとに、世界（約83.0億人）を「100人の村」に縮小して表現するインタラクティブなインフォグラフィック・Webダッシュボードです。
 
+- **公開URL（Vercel）**: https://world-100-village.vercel.app/
+- **GitHub リポジトリ**: https://github.com/rin642/world-100-village
+
 ## 技術構成
 
 - **React** + **TypeScript** + **Vite**
