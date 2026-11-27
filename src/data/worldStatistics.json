@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "title": "もし世界が100人の村だったら",
+    "subtitle": "最新データから見る、世界の暮らし",
+    "referenceDate": "2026年11月27日",
+    "populationBaseYear": 2026,
+    "worldPopulationEstimate": 8300678395,
+    "worldPopulationDisplay": "約83.0億人（8,300,678,395人）"
+  },
+  "population": {
+    "id": "population",
+    "categoryLabel": "人口",
+    "indicatorName": "地域別人口構成（世界を100人にした場合の居住地域）",
+    "per100Summary": "アジア59人・アフリカ19人・ヨーロッパ9人・中南米8人・北米5人・オセアニア1人（四捨五入計101人）",
+    "dataYear": "2026年（中位推計・2026年7月1日時点）",
+    "sourceOrganization": "国連経済社会局 人口部（UN DESA, Population Division）— World Population Prospects 2024 Revision",
+    "sourceUrl": "https://population.un.org/wpp/",
+    "definitionAndDenominator": "国連「世界人口推計2024年版」の中位推計による2026年の地域別人口割合。分母は2026年世界総人口推計値（8,300,678,395人）。",
+    "status": "available",
+    "exactPercentageSum": 100.0,
+    "roundedCountSum": 101,
+    "roundingNote": "各地域の割合の合計は100.00%ですが、100人あたりに四捨五入すると59+19+9+8+5+1=101人となり、+1人の丸め誤差が生じます。100人のアイコン表示では最大剰余法で合計100人へ配分するためオセアニア（0.57人）はアイコン上0人となり、表・注記で0.57%（四捨五入1人）を明示しています。",
+    "items": [
+      {
+        "id": "asia",
+        "label": "アジア",
+        "percentage": 58.59,
+        "per100Rounded": 59,
+        "per100Grid": 59,
+        "populationDisplay": "4,863,327,398人",
+        "color": "#1E3A5F"
+      },
+      {
+        "id": "africa",
+        "label": "アフリカ",
+        "percentage": 19.09,
+        "per100Rounded": 19,
+        "per100Grid": 19,
+        "populationDisplay": "1,584,985,259人",
+        "color": "#2B6CB0"
+      },
+      {
+        "id": "europe",
+        "label": "ヨーロッパ",
+        "percentage": 8.96,
+        "per100Rounded": 9,
+        "per100Grid": 9,
+        "populationDisplay": "743,482,362人",
+        "color": "#2F855A"
+      },
+      {
+        "id": "latin_america",
+        "label": "中南米・カリブ海",
+        "percentage": 8.1,
+        "per100Rounded": 8,
+        "per100Grid": 8,
+        "populationDisplay": "672,135,562人",
+        "color": "#3B82F6"
+      },
+      {
+        "id": "northern_america",
+        "label": "北米",
+        "percentage": 4.69,
+        "per100Rounded": 5,
+        "per100Grid": 5,
+        "populationDisplay": "389,628,822人",
+        "color": "#48BB78"
+      },
+      {
+        "id": "oceania",
+        "label": "オセアニア",
+        "percentage": 0.57,
+        "per100Rounded": 1,
+        "per100Grid": 0,
+        "populationDisplay": "47,118,994人",
+        "color": "#94A3B8",
+        "note": "割合0.57%（四捨五入1人、100人アイコン配分では0人）"
+      }
+    ]
+  },
+  "income": {
+    "id": "income",
+    "categoryLabel": "所得",
+    "indicatorName": "国際貧困ライン（1日3.00ドル未満）で暮らす人の割合",
+    "per100Summary": "1日3.00ドル未満：約11人（10.5%）／ 1日3.00ドル以上：約90人（89.5%）",
+    "dataYear": "2022年（確報ベースライン実績値）／ 参考：2025年ナウキャスト推計 9.9%",
+    "pppBasis": "2021年購買力平価（2021 PPP）基準・1日3.00国際ドル未満",
+    "sourceOrganization": "世界銀行（World Bank）— Poverty and Inequality Platform (PIP)",
+    "sourceUrl": "https://pip.worldbank.org/",
+    "definitionAndDenominator": "2021年購買力平価（PPP）換算で1日3.00ドル未満の消費または所得で生活する人口の割合（2025年6月改定の国際極度貧困ライン）。分母は世界総人口。",
+    "status": "available",
+    "exactPercentageSum": 100.0,
+    "roundedCountSum": 101,
+    "roundingNote": "10.5%と89.5%をそれぞれ四捨五入すると11人と90人（計101人）となるため、100人ドット表示では合計100人（11人 / 89人）に調整しています。",
+    "extraNotes": [
+      "世界銀行は2025年6月のPIP更新にて、国際極度貧困ラインを旧基準（2.15ドル / 2017 PPP）から3.00ドル（2021 PPP）へ改定しました。",
+      "2022年の実績ベースラインは10.5%（約8億3,800万人）、2025年のナウキャスト（推計予測）は9.9%です。"
+    ],
+    "items": [
+      {
+        "id": "below_line",
+        "label": "1日3.00ドル未満で暮らす人",
+        "percentage": 10.5,
+        "per100Rounded": 11,
+        "per100Grid": 11,
+        "populationDisplay": "約8億3,800万人（2022年）",
+        "color": "#1E3A5F"
+      },
+      {
+        "id": "at_or_above_line",
+        "label": "1日3.00ドル以上で暮らす人",
+        "percentage": 89.5,
+        "per100Rounded": 90,
+        "per100Grid": 89,
+        "populationDisplay": "約71億4,000万人（残余推計）",
+        "color": "#2F855A"
+      }
+    ]
+  },
+  "healthDrinkingWater": {
+    "id": "health_water",
+    "categoryLabel": "健康（飲料水）",
+    "indicatorName": "安全に管理された飲み水の利用状況",
+    "per100Summary": "利用できる人：74人（74%）／ 利用できない人：26人（26%）",
+    "dataYear": "2024年",
+    "sourceOrganization": "WHO / UNICEF Joint Monitoring Programme (JMP)",
+    "sourceUrl": "https://washdata.org/",
+    "definitionAndDenominator": "敷地内に設置され、必要な時に利用可能で、糞便性および優先化学物質による汚染のない改良型飲料水源（Safely managed drinking water services）を利用できる人の割合。分母は世界総人口。",
+    "status": "available",
+    "exactPercentageSum": 100.0,
+    "roundedCountSum": 100,
+    "items": [
+      {
+        "id": "safe_water",
+        "label": "安全に管理された飲み水を利用できる人",
+        "percentage": 74.0,
+        "per100Rounded": 74,
+        "per100Grid": 74,
+        "color": "#2B6CB0"
+      },
+      {
+        "id": "unsafe_water",
+        "label": "安全に管理された飲み水を利用できない人",
+        "percentage": 26.0,
+        "per100Rounded": 26,
+        "per100Grid": 26,
+        "populationDisplay": "約21億人",
+        "color": "#CBD5E1"
+      }
+    ]
+  },
+  "healthLifeExpectancy": {
+    "id": "health_life_expectancy",
+    "categoryLabel": "健康（平均寿命）",
+    "indicatorName": "世界の平均寿命（出生時平均余命）",
+    "per100Summary": "73.3歳（平均値のため人数換算不可）",
+    "dataYear": "2024年（実績推計）",
+    "sourceOrganization": "国連経済社会局 人口部（UN DESA, Population Division）— World Population Prospects 2024 Revision",
+    "sourceUrl": "https://population.un.org/wpp/",
+    "definitionAndDenominator": "出生時平均余命（その年の年齢別死亡率が今後も続くと仮定した場合の0歳児の平均生存年数）。分母は世界の出生コホート全体に対する平均値。※平均値であるため、100人あたりの人数には変換しません。",
+    "status": "available",
+    "value": 73.3,
+    "unit": "歳",
+    "reference2026Projection": "2026年中位推計では73.8歳と推計されています。"
+  },
+  "education": {
+    "id": "education",
+    "categoryLabel": "教育",
+    "indicatorName": "成人識字率（15歳以上）と非識字率",
+    "per100Summary": "読み書きができる人：約88人（87.74%）／ できない人：約12人（12.26%）［分母：15歳以上］",
+    "dataYear": "2024年",
+    "sourceOrganization": "ユネスコ統計研究所（UIS）／世界銀行 WDI (SE.ADT.LITR.ZS)",
+    "sourceUrl": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS",
+    "definitionAndDenominator": "日常生活に関する短く簡単な文章を読み書きして理解できる人の割合。分母は必ず「世界の15歳以上の人口」であり、15歳未満の人口は含まれません。",
+    "status": "available",
+    "exactPercentageSum": 100.0,
+    "roundedCountSum": 100,
+    "roundingNote": "分母は世界総人口ではなく「15歳以上の人口」です（15歳以上を100人とした場合の比較）。",
+    "items": [
+      {
+        "id": "literate",
+        "label": "読み書きができる人（15歳以上）",
+        "percentage": 87.74,
+        "per100Rounded": 88,
+        "per100Grid": 88,
+        "color": "#2F855A"
+      },
+      {
+        "id": "illiterate",
+        "label": "読み書きができない人（15歳以上）",
+        "percentage": 12.26,
+        "per100Rounded": 12,
+        "per100Grid": 12,
+        "color": "#94A3B8"
+      }
+    ]
+  },
+  "information": {
+    "id": "information",
+    "categoryLabel": "情報",
+    "indicatorName": "インターネット利用者・未利用者の割合",
+    "per100Summary": "利用者：76人（76%）／ 未利用者：24人（24%）",
+    "dataYear": "2026年（ITU Facts and Figures 2026）",
+    "sourceOrganization": "国際電気通信連合（ITU）",
+    "sourceUrl": "https://www.itu.int/itu-d/reports/statistics/facts-figures-2026/",
+    "definitionAndDenominator": "過去3か月間に任意の端末・場所からインターネットを利用した人の割合（推計約63億人利用／約20億人未利用）。分母は世界総人口。",
+    "status": "available",
+    "exactPercentageSum": 100.0,
+    "roundedCountSum": 100,
+    "items": [
+      {
+        "id": "online",
+        "label": "インターネット利用者",
+        "percentage": 76.0,
+        "per100Rounded": 76,
+        "per100Grid": 76,
+        "populationDisplay": "約63億人",
+        "color": "#2B6CB0"
+      },
+      {
+        "id": "offline",
+        "label": "インターネット未利用者",
+        "percentage": 24.0,
+        "per100Rounded": 24,
+        "per100Grid": 24,
+        "populationDisplay": "約20億人",
+        "color": "#CBD5E1"
+      }
+    ]
+  },
+  "religion": {
+    "id": "religion",
+    "categoryLabel": "宗教",
+    "indicatorName": "世界の宗教別人口構成",
+    "per100Summary": "キリスト教29人・イスラム教26人・無宗教24人・ヒンドゥー教15人・仏教4人・その他2人",
+    "dataYear": "2020年（2020年時点のデータ）",
+    "sourceOrganization": "Pew Research Center — How the Global Religious Landscape Changed From 2010 to 2020（2025年6月公表）",
+    "sourceUrl": "https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/",
+    "definitionAndDenominator": "201の国・地域の国勢調査・人口統計・調査に基づく2020年時点の宗教別帰属割合。分母は2020年時点の世界総人口。「その他の宗教」にはユダヤ教（約0.2%）および民族宗教・その他諸宗教（約2.2%）が含まれます。",
+    "status": "available",
+    "exactPercentageSum": 100.0,
+    "roundedCountSum": 100,
+    "extraNotes": [
+      "このデータはPew Research Centerによる2020年時点の推計です（2026年時点の値ではありません）。"
+    ],
+    "items": [
+      {
+        "id": "christian",
+        "label": "キリスト教",
+        "percentage": 28.8,
+        "per100Rounded": 29,
+        "per100Grid": 29,
+        "populationDisplay": "約23億人",
+        "color": "#1E3A5F"
+      },
+      {
+        "id": "muslim",
+        "label": "イスラム教",
+        "percentage": 25.6,
+        "per100Rounded": 26,
+        "per100Grid": 26,
+        "populationDisplay": "約20億人",
+        "color": "#2F855A"
+      },
+      {
+        "id": "unaffiliated",
+        "label": "無宗教",
+        "percentage": 24.2,
+        "per100Rounded": 24,
+        "per100Grid": 24,
+        "populationDisplay": "約19億人",
+        "color": "#64748B"
+      },
+      {
+        "id": "hindu",
+        "label": "ヒンドゥー教",
+        "percentage": 14.9,
+        "per100Rounded": 15,
+        "per100Grid": 15,
+        "populationDisplay": "約12億人",
+        "color": "#2B6CB0"
+      },
+      {
+        "id": "buddhist",
+        "label": "仏教",
+        "percentage": 4.1,
+        "per100Rounded": 4,
+        "per100Grid": 4,
+        "populationDisplay": "約3億2,400万人",
+        "color": "#48BB78"
+      },
+      {
+        "id": "other",
+        "label": "その他の宗教",
+        "percentage": 2.4,
+        "per100Rounded": 2,
+        "per100Grid": 2,
+        "populationDisplay": "ユダヤ教約0.2%＋その他約2.2%",
+        "color": "#94A3B8"
+      }
+    ]
+  },
+  "language": {
+    "id": "language",
+    "categoryLabel": "言語",
+    "indicatorName": "母語話者（L1）別の世界人口構成",
+    "per100Summary": "未取得",
+    "dataYear": "未取得",
+    "sourceOrganization": "未取得（利用許諾のない有料データは転載しない方針）",
+    "sourceUrl": null,
+    "definitionAndDenominator": "母語話者（第一言語：L1）数のみを基準とした世界人口に対する言語別割合。第2言語（L2）話者は重複計上しない。分母は世界総人口。",
+    "status": "unavailable",
+    "reason": "最新の網羅的かつ公的・無償で利用許諾のある母語話者数（L1）統計が確認できないため「未取得」と表示しています。主要なグローバル言語統計データベース（Ethnologue等）は有料または利用許諾を要するため転載せず、推測による補完やL2（第2言語）話者の合算も行いません。"
+  }
+}
